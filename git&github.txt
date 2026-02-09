@@ -21,5 +21,7 @@ Remote/cloud Repository:
    5. git remote add origin "your repo link" 
    6. git push -u origin main
 
+   Everytime you have repeat steps 3 , 4 and 6
+
 
 
