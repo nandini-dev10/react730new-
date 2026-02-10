@@ -1,0 +1,29 @@
+Events and Forms in React:
+    Events are the actions done by user to trigger a function call , a change in UI or any other action.Based on users actions, events are divided as multiple  such as 
+    keyboard events
+    mouse events
+    form events etc..,
+
+eg: imagine user clicks a button and a modal need to be opened
+we invoke an event onClick to get the desired result
+
+In JSX all events were camelcased and react handles events using something called synthetic events.
+React does not use browser events directly so it wraps them in a synthetic event
+This is html code
+<button onclick="add()">click me</button>
+
+This is React code
+<button onClick={add}>click me </button>
+<button onClick={()=>add(5,3)}>click me </button>
+
+Events always pass an object by default called event object which handles events like controld,targets etc..,
+eg:
+  function getData(e){
+    console.log(e.target.textContent)
+  }
+  <button onClick={getData}>click me </button>
+
+  keyboard events : onKeyDown, onKeyUp
+  Mouse Events : onMouseOver,onMouseDown,onMouseOut,onScroll,onClick,onDblClick
+  Form Events : onChange,onInput,onSubmit,onSelect etc..,
+  
