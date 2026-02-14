@@ -27,3 +27,15 @@ eg:
   Mouse Events : onMouseOver,onMouseDown,onMouseOut,onScroll,onClick,onDblClick
   Form Events : onChange,onInput,onSubmit,onSelect etc..,
   
+Forms: forms in react are used to get the data from user using inputs and send the data to backend/server through API's
+React Forms can be done in two ways
+  i. Controlled Components: In these components, state management of inputs can be controlled easily . it uses events such as onInput,onChange,onSelect ,onSubmit etc..,
+
+  In React, we have libraries to create forms like react hook forms or Formik. For validations we can use Zod
+
+
+ ii. uncontrolled Components: In these components, state management of inputs cannot be controlled as they are handled by DOM. we can get values using DOM using a hook called useRef
+
+
+
+
